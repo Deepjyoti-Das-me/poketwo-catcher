@@ -185,7 +185,7 @@ if(command === "say") {
 client.on('message', message => {
   try {
     let embed = new Discord.RichEmbed()
-      .setColor(0xFF4500);
+      .setColor(0x9CCFFF);
     
     if (message.guild && !message.channel.memberPermissions(client.user).has('SEND_MESSAGES')) return;
     
@@ -194,9 +194,9 @@ client.on('message', message => {
     }
 
      if(message.guild.id == "756506911183994990"){ 
-       if (message.author.id == '669228505128501258') {
+       if (message.author.id == '716390085896962058') {
       message.embeds.forEach((e) => {
-        if (e.description !== undefined && e.description.startsWith("Guess the pokémon аnd type")) {
+        if (e.description !== undefined && e.description.startsWith("Guess the pokémon and type `.catch <pokémon>` to catch it!")) {
           if (e.image) {
             let url = e.image.url;
             
